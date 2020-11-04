@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Отчет</title>
+  <link rel="preload" href="fonts/TTNorms-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+  <section class="search">
+    <form class="search__form">
+      <label class="search__label" for="search-input">Enter inventory number, guid or bims id</label>
+      <input class="search__input" type="search" id="search-input">
+      <button class="search__btn" type="submit" aria-label="site search">Search</button>
+    </form>
+  </section>
+  <section class="unit">
+    <div class="unit__title">
+      <div class="unit__img">
+        <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M22.3506 10.0006c-.4571 0-.8278-.37315-.8278-.83336v-3.3331c0-.46021.3707-.83332.8278-.83332.4572 0 .8278.37311.8278.83332v3.33318c-.0001.46013-.3706.83328-.8278.83328z" fill="#FFA000"/><path d="M22.3506 6.66736c1.3715 0 2.4833-1.11923 2.4833-2.49986 0-1.38064-1.1118-2.49987-2.4833-2.49987s-2.4833 1.11923-2.4833 2.49987c0 1.38063 1.1118 2.49986 2.4833 2.49986z" fill="#FFC107"/><path d="M19.0395 8.33398h6.6222c.4571 0 .8277.37311.8277.83332v11.666c0 .4602-.3706.8333-.8277.8333h-6.6222c-.4571 0-.8278-.3731-.8278-.8333V9.16722c0-.46021.3707-.83324.8278-.83324z" fill="#FFD54F"/><path d="M35.2042 21.6666H4.53041c-1.56906.005-3.00465-.8882-3.70176-2.3033l-.7400253-1.4915c-.2043297-.4119-.038336-.9126.3708663-1.1183.409125-.2057.906489-.0386 1.110889.3733l.74003 1.4916c.41844.8484 1.27913 1.3839 2.22008 1.3815H35.2043c.9416.0031 1.803-.5327 2.2217-1.3815l.74-1.4916c.2044-.4119.7017-.579 1.1109-.3733.4092.2056.5752.7063.3709 1.1183l-.74 1.4915c-.6976 1.4157-2.1339 2.309-3.7036 2.3033z" fill="#CFD8DC"/><path d="M7.45078 24.9997c-.45716 0-.82779-.3731-.82779-.8333v-3.3332c0-.4602.37063-.8333.82779-.8333s.8278.3731.8278.8333v3.3332c-.00008.4602-.37064.8333-.8278.8333zM32.2838 24.9997c-.4571 0-.8277-.3731-.8277-.8333v-3.3332c0-.4602.3706-.8333.8277-.8333.4572 0 .8278.3731.8278.8333v3.3332c-.0001.4602-.3706.8333-.8278.8333z" fill="#CFD8DC"/><path d="M39.651 24.5331l-3.129 6.2997H3.21254L.0835735 24.5331c-.1222253-.2555-.1098088-.5556.0331365-.7999.155595-.2452.422939-.3954.711856-.4H38.906c.2889.0046.5563.1548.7118.4.143.2443.1554.5444.0332.7999z" fill="#607D8B"/><path d="M39.6178 37.9324c-.1556.2451-.4229.3953-.7118.4H.828566c-.288917-.0047-.556339-.1549-.711856-.4-.1429453-.2444-.1553618-.5444-.0331365-.8L3.21254 30.8328H36.522l3.129 6.2996c.1222.2556.1098.5555-.0332.8z" fill="#455A64"/><path d="M17.384 34.9992H5.79517c-.45716 0-.82779-.3731-.82779-.8333 0-.4602.37063-.8333.82779-.8333H17.3839c.4572 0 .8278.3731.8278.8333 0 .4602-.3705.8333-.8277.8333zM24.0061 34.9992h-1.6555c-.4572 0-.8278-.3731-.8278-.8333 0-.4602.3706-.8333.8278-.8333h1.6555c.4572 0 .8278.3731.8278.8333 0 .4602-.3706.8333-.8278.8333zM28.9727 34.9992h-1.6555c-.4572 0-.8278-.3731-.8278-.8333 0-.4602.3706-.8333.8278-.8333h1.6555c.4572 0 .8278.3731.8278.8333 0 .4602-.3706.8333-.8278.8333zM33.9394 34.9992h-1.6556c-.4571 0-.8277-.3731-.8277-.8333 0-.4602.3706-.8333.8277-.8333h1.6556c.4571 0 .8278.3731.8278.8333 0 .4602-.3707.8333-.8278.8333z" fill="#B0BEC5"/></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h39.7351v40H0z"/></clipPath></defs></svg>
+      </div>
+      <h1>Аналитические весы OHAUS Adventurer АХ324 (B715976163)</h1>
+    </div>
+    <div class="unit__report-filter">
+      <form class="unit__report-form report-form" method="get" action="" name="report">
+        <label class="visually-hidden" for="period">Select a period of time</label>
+          <select class="report-form__select" id="period">
+            <option>1 month</option>
+            <option>3 month</option>
+            <option>6 month</option>
+          </select>
+        <ul class="report-form__list">
+          <li class="report-form__type">
+            <input class="report-form__input" type="radio" id="calibr" value="calibration" name="report">
+            <label class="report-form__label" for="calibr">Calibration</label>
+          </li>
+          <li class="report-form__type">
+            <input class="report-form__input" type="radio" id="measure" value="measuring" name="report">
+            <label class="report-form__label" for="measure">Measuring</label>
+          </li>
+          <li class="report-form__type">
+            <input class="report-form__input" type="radio" id="use" value="using" name="report">
+            <label class="report-form__label" for="use">Using</label>
+          </li>
+        </ul>
+        <button class="report-form__btn-submit" type="submit">Generate report</button>
+        <button class="report-form__btn-print" type="button">Save pdf</button>
+    </form>
+  </div>
+    <div class="unit__info">
+      <ul class="unit__list">
+        <li class="unit__item">
+          <span>Тип оборудования:</span>
+          <span>Весы</span>
+        </li>
+        <li class="unit__item">
+          <span>Статус: </span>
+          <span>Готов к работе</span>
+        </li>
+        <li class="unit__item">
+          <span>Изготовитель: </span>
+          <span>Ohaus</span>
+        </li>
+        <li class="unit__item">
+          <span>Модель: </span>
+          <span>AX-123</span>
+        </li>
+        <li class="unit__item">
+          <span>Ответственное подразделение (ремонт): </span>
+          <span>Группа обслуживания лабораторного оборудования</span>
+        </li>
+        <li class="unit__item">
+          <span>Эксплуатирующее подразделение: </span>
+          <span>Химико-аналитическая лаборатория 2.0</span>
+        </li>
+        <li class="unit__item">
+          <span>МОЛ: </span>
+          <span>Иванов Иван Иванович</span>
+        </li>
+        <li class="unit__item">
+          <span>Территория: </span>
+          <span>г. Санкт-Петербург (Нойдорф)</span>
+        </li>
+        <li class="unit__item">
+          <span>Серийный номер: </span>
+          <span>B715976163</span>
+        </li>
+        <li class="unit__item">
+          <span>GUID: </span>
+          <span><a class="unit__link" href="#">508b2a71-662e-4983-ae0c-3cb0c1cd21c5</a></span>
+        </li>
+        <li class="unit__item">
+          <span>Bims ID: </span>
+          <span><a class="unit__link" href="#">49db8db1-585f-4b9e-bbf0-8a59698edc8b</a></span>
+        </li>
+        <li class="unit__item">
+          <span>Tam: </span>
+          <span><a class="unit__link" href="#">А-001234</a></span>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+  <section class="report">
+    <table class="report__table">
+      <caption class="report__caption">Calibration report</caption>
+      <tr class="report__row report__row--head">
+        <th class="report__cell report__cell--data">Data</th>
+        <th class="report__cell report__cell--buffer">Used buffer solutions</th>
+        <th class="report__cell report__cell--slope">Slope, % <br> Norm  95-105</th>
+        <th class="report__cell report__cell--offset">Offset, mV <br> Norm  ±(0-20)</th>
+        <th class="report__cell report__cell--user">User</th>
+      </tr>
+      <tr class="report__row">
+        <td class="report__cell report__cell--data">
+          <time>04.10.19 10:23</time>
+        </td>
+        <td class="report__cell report__cell--buffer">
+          <ul class="report__buffer-list">
+            <li class="report__buffer-item">
+              В1: № 2000460789536: pH 1.09
+            </li>
+            <li class="report__buffer-item">
+              В2: № 2000460789536: pH 2.00
+            </li>
+            <li class="report__buffer-item">
+              В3: № 2000460789536: pH 4.01
+            </li>
+            <li class="report__buffer-item">
+              В4: № 2000460789536: pH 7.00
+            </li>
+            <li class="report__buffer-item">
+              В5: № 2000460789536: pH 9.21
+            </li>
+          </ul>
+        </td>
+        <td class="report__cell report__cell--slope">
+          <div class="report__cell-wrapper">
+            <span class="report__slope-number">98.7</span>
+            <span class="report__slope-checked"></span>
+          </div>
+        </td>
+        <td class="report__cell report__cell--offset">
+          <div class="report__cell-wrapper">
+            <span class="report__offset-number">-0.3</span>
+            <span class="report__offset-checked"></span>
+          </div>
+        </td>
+        <td class="report__cell report__cell--user">Иванов Генадий Петрович</td>
+      </tr>
+      <tr class="report__row">
+        <td class="report__cell report__cell--data">
+          <time>04.10.19 10:23</time>
+        </td>
+        <td class="report__cell report__cell--buffer">
+          <ul class="report__buffer-list">
+            <li class="report__buffer-item">
+              В1: № 2000460789536: pH 1.09
+            </li>
+            <li class="report__buffer-item">
+              В2: № 2000460789536: pH 2.00
+            </li>
+            <li class="report__buffer-item">
+              В3: № 2000460789536: pH 4.01
+            </li>
+            <li class="report__buffer-item">
+              В4: № 2000460789536: pH 7.00
+            </li>
+            <li class="report__buffer-item">
+              В5: № 2000460789536: pH 9.21
+            </li>
+          </ul>
+        </td>
+        <td class="report__cell report__cell--slope">
+          <div class="report__cell-wrapper">
+            <span class="report__slope-number">98.7</span>
+            <span class="report__slope-checked"></span>
+          </div>
+        </td>
+        <td class="report__cell report__cell--offset">
+          <div class="report__cell-wrapper">
+            <span class="report__offset-number">-0.3</span>
+            <span class="report__offset-checked"></span>
+          </div>
+        </td>
+        <td class="report__cell report__cell--user">Петров Иван Генадьевич</td>
+      </tr>
+      <tr class="report__row">
+        <td class="report__cell report__cell--data">
+          <time>04.10.19 10:23</time>
+        </td>
+        <td class="report__cell report__cell--buffer">
+          <ul class="report__buffer-list">
+            <li class="report__buffer-item">
+              В1: № 2000460789536: pH 1.09
+            </li>
+            <li class="report__buffer-item">
+              В2: № 2000460789536: pH 2.00
+            </li>
+            <li class="report__buffer-item">
+              В3: № 2000460789536: pH 4.01
+            </li>
+            <li class="report__buffer-item">
+              В4: № 2000460789536: pH 7.00
+            </li>
+            <li class="report__buffer-item">
+              В5: № 2000460789536: pH 9.21
+            </li>
+          </ul>
+        </td>
+        <td class="report__cell report__cell--slope">
+          <div class="report__cell-wrapper">
+            <span class="report__slope-number">98.7</span>
+            <span class="report__slope-checked"></span>
+          </div>
+        </td>
+        <td class="report__cell report__cell--offset">
+          <div class="report__cell-wrapper">
+            <span class="report__offset-number">-0.3</span>
+            <span class="report__offset-checked"></span>
+          </div>
+        </td>
+        <td class="report__cell report__cell--user">Петров Генадий Иванович</td>
+      </tr>
+      <tr class="report__row">
+        <td class="report__cell report__cell--data">
+          <time>04.10.19 10:23</time>
+        </td>
+        <td class="report__cell report__cell--buffer">
+          <ul class="report__buffer-list">
+            <li class="report__buffer-item">
+              В1: № 2000460789536: pH 1.09
+            </li>
+            <li class="report__buffer-item">
+              В2: № 2000460789536: pH 2.00
+            </li>
+            <li class="report__buffer-item">
+              В3: № 2000460789536: pH 4.01
+            </li>
+            <li class="report__buffer-item">
+              В4: № 2000460789536: pH 7.00
+            </li>
+            <li class="report__buffer-item">
+              В5: № 2000460789536: pH 9.21
+            </li>
+          </ul>
+        </td>
+        <td class="report__cell report__cell--slope">
+          <div class="report__cell-wrapper">
+            <span class="report__slope-number">90.1</span>
+            <span class="report__slope-checked"></span>
+          </div>
+        </td>
+        <td class="report__cell report__cell--offset">
+          <div class="report__cell-wrapper">
+            <span class="report__offset-number">-0.5</span>
+            <span class="report__offset-checked"></span>
+          </div>
+        </td>
+        <td class="report__cell report__cell--user">Генадьев Иван Петрович</td>
+      </tr>
+    </table>
+  </section>
+</div>
+<script src="js/script.js" type="text/javascript" async></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "Стартовый шаблон",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "eslint": "4.16.0",
+    "stylelint": "^13.6.1"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint",
+    "test": "npm run editorconfig && npm run stylelint && eslint source/js/"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js"
+  ],
+  "engines": {
+    "node": "8.15"
+  }
+}
